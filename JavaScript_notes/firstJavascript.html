@@ -1,0 +1,53 @@
+<!--
+JS每個語句結尾需分號
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>rex09_的JS筆記</title>
+
+    </head>
+    <body>
+        <p>其餘js筆記在.js檔裡</p>
+        <a href="https://www.w3schools.com/js/">W3c JS教學網站(JS HTML DOM可看其他取得html元素的函式)</a>
+        <br/>
+        <a href="https://www.w3schools.com/js/js_window.asp">W3c JS window(可在JS Browser BOM中找到此項)</a>
+        <br/>
+        <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">W3c event list</a>
+        <br/>
+        
+        <!--可在<script>裡直接寫JS-->
+        <!--<script>裡可使用//及/**/, 不可使用html的註解-->
+        <script>
+            document.write("hello");//傳入[字串],將[字串]寫入html程式碼中
+            document.write("<h1>im rex09_</h1>");
+        </script>
+
+        <!--從js取得html元素-->
+        <p id="pLabel">this is pLabel.</p>
+        <a id="aLabel" href="https://www.google.com.tw/">google首頁</a>
+        <br/>
+
+        <!--event listener-->
+        <!--<button> 就是個按鈕-->
+        <!--onclick="要做的事" //按下按鈕後程式要做的事-->
+        <!--監聽的事件寫在html裡要加on(onclick)-->
+        <!--this代表當前標籤(button)-->
+        <button id="btn" onclick="handle_click(this)">按紐1</button>
+        <button id="btn_in_JS">按紐2</button>
+        <br/>
+        <!--監聽滑鼠有沒有滑過圖片-->
+        <img id=imgLabel src="Valentine_haachama.jpg" width="250" height="250"/>
+
+        <!--自製:按下按鈕改變圖片-->
+        <hr/>
+        <img id="self_imgLabel" src="Valentine_haachama.jpg" width="250" height="250"/>
+        <button id="self_btn_in_JS">自製按紐(按下按鈕改變圖片)</button>
+        <hr/>
+
+        <!--或使用引入方式引入js-->
+        <script src="script.js"></script>
+    </body>
+</html>
+<!---->
